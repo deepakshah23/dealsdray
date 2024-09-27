@@ -1,0 +1,94 @@
+<% layout('/layouts/boilerplate') %>
+
+<form class="row col-6 offset-3 mt-4 was-validated" action="/registration" method="post">
+  <div class="col-6 offset-3 mb-3">
+    <h1>Create Employee</h1>
+  </div>
+
+    <div class="col-md-12 mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control " id="name" name="employee[name]" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control " id="email" name="employee[email]" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-3">
+      <label for="contact" class="form-label">Mobile No</label>
+      <input type="tel" class="form-control " id="contact" name="employee[contact]" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <label for="designation" class="form-label">Designation</label>
+      <select id="designation" class="form-select" name="employee[designation]">
+        <option selected>HR</option>
+        <option>Manager</option>
+        <option>Sales</option>
+      </select>
+    </div>
+
+    <fieldset class=" row mb-3 mt-3">
+      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="employee[gender]" id="gridRadios1" value="male">
+          <label class="form-label" for="gridRadios1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="employee[gender]" id="gridRadios2" value="female">
+          <label class="form-label" for="gridRadios2">
+            Female
+          </label>
+        </div>
+    </fieldset>
+
+    <div class="form-check">
+      <label class="form-label" for="flexCheckDefault">
+        Course
+      </label>
+      <div class="form-check">
+        <input class="form-input" type="checkbox" value="MCA" id="flexCheckDefault" name="employee[course]">
+        <label class="form-label" for="flexCheckDefault">
+          MCA
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-input" type="checkbox" value="BCA" id="flexCheckChecked" name="employee[course]">
+        <label class="form-label" for="flexCheckChecked">
+          BCA
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-input" type="checkbox" value="BSC" id="flexCheckChecked" name="employee[course]" >
+        <label class="form-label" for="flexCheckChecked">
+          BSC
+        </label>
+      </div>
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="url" class="form-label">Image</label>
+        <input type="file" class="form-control " id="url" name="employee[url]"  required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+    
+    <div class="col-12 mb-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+  </div>
+  </form>

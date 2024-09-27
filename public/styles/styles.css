@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(144, 154, 162);
+}
+footer{
+    background-color: rgb(42, 44, 44);
+    color: white;
+    height: 100px;
+    width: 100%;
+    
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+table td a{
+    text-decoration: none;
+}
+.page-link a button{
+   border-radius: 10px;
+   background-color: rgb(88, 187, 236);
+    margin: 5px;
+    padding: 5px;
+
+}
+.navimg {
+            
+    float: left;
+    
+}
+
+.topnav {
+overflow: hidden;
+background-color: #FFFFD7;
+}
+
+.topnav a {
+float: left;
+color: purple;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
+
+.topnav a:hover {
+background-color: #996699;
+color: white;
+}
+
+.topnav a.active {
+background-color: #2F74D0;
+color: white;
+}
+
+.login ,.signup{
+    min-height: 80vh;
+}

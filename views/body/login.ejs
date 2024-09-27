@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerplate') %>
+
+<div class="login col-6 offset-3 mt-2 ">
+  <h2>Login:</h2>
+  <form class="row col-10 offset-1 mt-4 was-validated " action="/login" method="post">
+    <div class="col-md-12 mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control " id="username" name="username" required>
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control"  id="password" required >
+    </div>
+    <div class="col-12 mb-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+</div>
+   
